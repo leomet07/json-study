@@ -9,7 +9,7 @@ def parse_img(path, draw):
 
     cropped = cv2.resize(cropped, (w * 2, h * 2))
     cropped = cv2.detailEnhance(cropped, sigma_s=60, sigma_r=1.2)
-    cropped = cv2.resize(cropped, (600, 1200))
+    cropped = cv2.resize(cropped, (400, 800))
 
     text = ocr.recog(cropped)
 
